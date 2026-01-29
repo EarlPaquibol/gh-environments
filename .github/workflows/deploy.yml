@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: ghactions.isszhh6.mongodb.net
-      MONGODB_USERNAME: gh_actions_ep
-      MONGODB_PASSWORD: VmSlSLPCIU2LSqr1
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 3000
     runs-on: ubuntu-latest
     steps:
